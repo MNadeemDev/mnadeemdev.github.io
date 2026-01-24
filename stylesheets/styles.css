@@ -110,6 +110,29 @@ a:hover small {
   color:var(--muted);
 }
 
+.lang-toggle {
+  margin-top:0.8rem;
+  display:flex;
+  gap:0.5rem;
+}
+
+.lang-button {
+  border:0.0625rem solid var(--line);
+  background:#ffffff;
+  color:var(--muted);
+  padding:0.35rem 0.7rem;
+  border-radius:999px;
+  font-size:0.8rem;
+  font-weight:600;
+  cursor:pointer;
+}
+
+.lang-button.is-active {
+  background:var(--accent);
+  color:#fff;
+  border-color:var(--accent);
+}
+
 .summary {
   margin-top:1.2rem;
   border-top:0.0625rem dashed var(--line);
