@@ -24,33 +24,42 @@
   <body data-gr-c-s-loaded="true">
     <div class="wrapper">
       <div class="hero">
-        <table class="hero-table">
-          <tbody>
-            <tr>
-              <td class="hero-photo">
-                <img src="assets/img/mnadeem_professional.jpg" width="200" alt="Muhammad Nadeem">
-              </td>
-              <td>
-                <h1>Muhammad Nadeem</h1>
-                <div class="hero-meta">
-                  <span data-lang="en">Full-time AI Research Engineer, <a href="https://spilab.kr/">Spilab</a> (Seoul, South Korea)</span>
-                  <span data-lang="ko">스필랩(서울) AI 연구 엔지니어</span><br>
-                  <span data-lang="en">Email: muhammad.nadeem23064 [at] gmail.com</span>
-                  <span data-lang="ko">이메일: muhammad.nadeem23064 [at] gmail.com</span><br>
-                  <a href="assets/cv.pdf">CV</a> |
-                  <a href="https://scholar.google.com/citations?user=n_sA9mkAAAAJ&amp;hl=en">Google Scholar</a> |
-                  <a href="https://github.com/MNadeemDev">Github</a> |
-                  <a href="https://www.linkedin.com/in/mnadeem12/">Linkedin</a>
-                </div>
-                <div class="lang-toggle" aria-label="Language toggle">
-                  <button type="button" class="lang-button is-active" data-lang-toggle="en">EN</button>
-                  <button type="button" class="lang-button" data-lang-toggle="ko">한국어</button>
-                </div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-        <div class="summary">
+        <div class="hero-center">
+          <img src="assets/img/mnadeem_professional.jpg" width="180" alt="Muhammad Nadeem">
+          <h1>Muhammad Nadeem</h1>
+          <div class="hero-meta">
+            <span data-lang="en">AI Research Engineer, <a href="https://spilab.kr/">Spilab</a> &middot; Seoul, South Korea</span>
+            <span data-lang="ko">AI 연구 엔지니어, <a href="https://spilab.kr/">스필랩</a> &middot; 대한민국 서울</span><br>
+            <span data-lang="en">M.S. in Computer Science and Engineering, Sejong University</span>
+            <span data-lang="ko">세종대학교 컴퓨터공학 석사</span><br>
+            <span data-lang="en">Email: muhammad.nadeem23064 [at] gmail.com</span>
+            <span data-lang="ko">이메일: muhammad.nadeem23064 [at] gmail.com</span><br>
+            <a href="assets/cv.pdf">CV</a> |
+            <a href="https://scholar.google.com/citations?user=n_sA9mkAAAAJ&amp;hl=en">Google Scholar</a> |
+            <a href="https://github.com/MNadeemDev">Github</a> |
+            <a href="https://www.linkedin.com/in/mnadeem12/">Linkedin</a>
+          </div>
+          <div class="lang-toggle" aria-label="Language toggle">
+            <button type="button" class="lang-button is-active" data-lang-toggle="en">EN</button>
+            <button type="button" class="lang-button" data-lang-toggle="ko">한국어</button>
+          </div>
+          <nav class="nav-links">
+            <a href="#about"><span data-lang="en">About</span><span data-lang="ko">소개</span></a>
+            <a href="#news"><span data-lang="en">News</span><span data-lang="ko">소식</span></a>
+            <a href="#publications"><span data-lang="en">Publications</span><span data-lang="ko">논문</span></a>
+            <a href="#projects"><span data-lang="en">Projects</span><span data-lang="ko">프로젝트</span></a>
+            <a href="#experience"><span data-lang="en">Experience</span><span data-lang="ko">경력</span></a>
+            <a href="#skills"><span data-lang="en">Skills</span><span data-lang="ko">기술</span></a>
+            <a href="#awards"><span data-lang="en">Awards</span><span data-lang="ko">수상</span></a>
+            <a href="#activities"><span data-lang="en">Activities</span><span data-lang="ko">학술활동</span></a>
+          </nav>
+        </div>
+      </div>
+
+      <div class="sections">
+        <section class="section" id="about">
+          <h2 data-lang="en">About Me</h2>
+          <h2 data-lang="ko">소개</h2>
           <p class="lead" data-lang="en">Full-time AI Research Engineer working on <b>LLM/VLM and vision models</b> end to end &mdash; from research and training through to optimized GPU inference. My current work covers <b>agentic RAG</b> systems (LangChain, tool calling, vector retrieval, answer evaluation), <b>lightweight LLM/VLM fine-tuning</b> with PyTorch and Hugging Face (Transformers, PEFT, LoRA/QLoRA), and <b>inference optimization</b> using quantization (INT8/4-bit), ONNX, TensorRT, OpenVINO, and vLLM/Ollama for resource-constrained GPUs and edge devices.</p>
           <p class="lead" data-lang="ko">LLM/VLM 및 비전 모델을 연구·학습부터 GPU 추론 최적화까지 엔드투엔드로 담당하는 AI 연구 엔지니어입니다. 현재 <b>에이전틱 RAG</b> 시스템(LangChain, 툴 콜링, 벡터 검색, 답변 평가), PyTorch·Hugging Face(Transformers, PEFT, LoRA/QLoRA) 기반 <b>경량 LLM/VLM 파인튜닝</b>, 그리고 양자화(INT8/4-bit)·ONNX·TensorRT·OpenVINO·vLLM/Ollama를 활용한 <b>추론 최적화</b>를 수행하고 있습니다.</p>
           <p class="lead" data-lang="en">On the vision side I research and develop detection, segmentation, and tracking models (YOLOv8/v12/v26, Faster R-CNN, DETR, Deep SORT) that run against <b>live CCTV/IP-camera and drone RTSP streams</b>, and deploy them as real-time services with FastAPI/Flask on NVIDIA GPUs and Jetson Orin Nano.</p>
@@ -87,11 +96,194 @@
           </div>
           <p class="meta-line" data-lang="en"><b>Tech stack snapshot:</b> PyTorch, Hugging Face (Transformers, PEFT), LangChain, vLLM, ONNX, TensorRT, OpenVINO, TFLite, TensorFlow, OpenCV, FastAPI, Flask, React.</p>
           <p class="meta-line" data-lang="ko"><b>기술 스택 요약:</b> PyTorch, Hugging Face(Transformers, PEFT), LangChain, vLLM, ONNX, TensorRT, OpenVINO, TFLite, TensorFlow, OpenCV, FastAPI, Flask, React.</p>
-        </div>
-      </div>
+        </section>
 
-      <div class="sections">
+        <section class="section" id="news">
+          <h2 data-lang="en">News</h2>
+          <h2 data-lang="ko">소식</h2>
+          <ul class="news-list" data-lang="en">
+            <li><span class="news-date">2026</span><span class="is-new">Paper accepted at <b>IEEE/CVF WACV 2026 Workshops</b> (5th LLVM-AD): &ldquo;Lightweight Multi-Scale Fusion for Real-Time Autonomous Driving Segmentation&rdquo; (first author).</span></li>
+            <li><span class="news-date">2026</span><span>&ldquo;SpectroFire: Zero-Shot Fire and Smoke Detection via Real-Time Edge Inference and IoT Data Networking&rdquo; accepted at <b>ICOIN 2026</b>.</span></li>
+            <li><span class="news-date">2026</span><span>&ldquo;Physics-Consistent Hybrid AI for Quantum Device Manufacturing&rdquo; accepted at <b>IEEE BigComp 2026</b>.</span></li>
+            <li><span class="news-date">2025</span><span>&ldquo;Bringing CLIP to the Edge: A Lightweight Fire Detection System for Real-Time Monitoring with UAV&rdquo; accepted at <b>ACPR 2025</b>.</span></li>
+          </ul>
+          <ul class="news-list" data-lang="ko">
+            <li><span class="news-date">2026</span><span class="is-new"><b>IEEE/CVF WACV 2026 워크숍</b>(5th LLVM-AD)에 제1저자 논문 &ldquo;Lightweight Multi-Scale Fusion for Real-Time Autonomous Driving Segmentation&rdquo; 게재 확정.</span></li>
+            <li><span class="news-date">2026</span><span>&ldquo;SpectroFire: Zero-Shot Fire and Smoke Detection via Real-Time Edge Inference and IoT Data Networking&rdquo; <b>ICOIN 2026</b> 게재 확정.</span></li>
+            <li><span class="news-date">2026</span><span>&ldquo;Physics-Consistent Hybrid AI for Quantum Device Manufacturing&rdquo; <b>IEEE BigComp 2026</b> 게재 확정.</span></li>
+            <li><span class="news-date">2025</span><span>&ldquo;Bringing CLIP to the Edge: A Lightweight Fire Detection System for Real-Time Monitoring with UAV&rdquo; <b>ACPR 2025</b> 게재 확정.</span></li>
+          </ul>
+          <details class="see-more">
+            <summary><span data-lang="en">See older news</span><span data-lang="ko">이전 소식 보기</span></summary>
+            <ul class="news-list" data-lang="en">
+              <li><span class="news-date">2025</span><span>&ldquo;A Label-Free Lightweight Prompt-Driven Cross-Modal Fire Detection on Robotic Edge Platforms&rdquo; accepted at <b>ICRCV 2025</b>.</span></li>
+              <li><span class="news-date">2025</span><span>&ldquo;EdgeFlame: A Physics-Inspired Framework for Zero-Shot Fire and Smoke Recognition&rdquo; accepted at <b>ICARCA 2025</b>.</span></li>
+              <li><span class="news-date">2025</span><span>&ldquo;IoT Anomaly Detection with Sound-Based Spectral Analysis and Lightweight Model&rdquo; accepted at <b>IEEE BigComp 2025</b>.</span></li>
+              <li><span class="news-date">2024</span><span>Joined <b>Spilab</b> (Seoul) as AI Research Engineer, working on LLM/VLM and computer vision.</span></li>
+              <li><span class="news-date">2024</span><span>Completed <b>M.S. in Computer Science and Engineering</b> at Sejong University (CVPR Lab).</span></li>
+              <li><span class="news-date">2023</span><span>Received the <b>Best Paper Award</b> at ICNGC 2023.</span></li>
+            </ul>
+            <ul class="news-list" data-lang="ko">
+              <li><span class="news-date">2025</span><span>&ldquo;A Label-Free Lightweight Prompt-Driven Cross-Modal Fire Detection on Robotic Edge Platforms&rdquo; <b>ICRCV 2025</b> 게재 확정.</span></li>
+              <li><span class="news-date">2025</span><span>&ldquo;EdgeFlame: A Physics-Inspired Framework for Zero-Shot Fire and Smoke Recognition&rdquo; <b>ICARCA 2025</b> 게재 확정.</span></li>
+              <li><span class="news-date">2025</span><span>&ldquo;IoT Anomaly Detection with Sound-Based Spectral Analysis and Lightweight Model&rdquo; <b>IEEE BigComp 2025</b> 게재 확정.</span></li>
+              <li><span class="news-date">2024</span><span><b>스필랩</b>(서울) AI 연구 엔지니어로 합류하여 LLM/VLM 및 컴퓨터 비전 연구 수행.</span></li>
+              <li><span class="news-date">2024</span><span>세종대학교 CVPR Lab에서 <b>컴퓨터공학 석사</b> 학위 취득.</span></li>
+              <li><span class="news-date">2023</span><span>ICNGC 2023에서 <b>최우수 논문상</b> 수상.</span></li>
+            </ul>
+          </details>
+        </section>
+
+        <section class="section" id="publications">
+          <h2 data-lang="en">Vision-Language, Lightweight &amp; Edge Inference Papers (2025&ndash;2026)</h2>
+          <h2 data-lang="ko">비전-언어 · 경량화 · 엣지 추론 논문 (2025&ndash;2026)</h2>
+          <p class="meta-line" data-lang="en">13 publications, 5 as first author &mdash; full list on <a href="https://scholar.google.com/citations?user=n_sA9mkAAAAJ&amp;hl=en">Google Scholar</a>.</p>
+          <p class="meta-line" data-lang="ko">총 13편의 논문(제1저자 5편) &mdash; 전체 목록은 <a href="https://scholar.google.com/citations?user=n_sA9mkAAAAJ&amp;hl=en">Google Scholar</a>에서 확인할 수 있습니다.</p>
+          <table class="pub-table">
+            <tbody>
+              <tr>
+                <td class="pub-spacer"></td>
+                <td>
+                  <b>Lightweight Multi-Scale Fusion for Real-Time Autonomous Driving Segmentation</b><br>
+                  <b>Muhammad Nadeem</b>, Hyeyoung Lee<br>
+                  IEEE/CVF WACV 2026 Workshops &mdash; 5th Workshop on Large Language and Vision Models for Autonomous Driving (LLVM-AD), pp. 1721&ndash;1728<br>
+                  [<a href="https://llvm-ad.github.io/WACV_2026/">Workshop</a>]
+                </td>
+              </tr>
+              <tr>
+                <td class="pub-spacer"></td>
+                <td>
+                  <b>Bringing CLIP to the Edge: A Lightweight Fire Detection System for Real-Time Monitoring with UAV</b><br>
+                  Hyeyoung Lee, <b>Muhammad Nadeem</b><br>
+                  Asian Conference on Pattern Recognition (ACPR), 2025
+                </td>
+              </tr>
+              <tr>
+                <td class="pub-spacer"></td>
+                <td>
+                  <b>A Label-Free Lightweight Prompt-Driven Cross-Modal Fire Detection on Robotic Edge Platforms</b><br>
+                  Hyeyoung Lee, <b>Muhammad Nadeem</b><br>
+                  The 7th International Conference on Robotics and Computer Vision (ICRCV), 2025
+                </td>
+              </tr>
+              <tr>
+                <td class="pub-spacer"></td>
+                <td>
+                  <b>SpectroFire: Zero-Shot Fire and Smoke Detection via Real-Time Edge Inference and IoT Data Networking</b><br>
+                  Hyeyoung Lee, <b>Muhammad Nadeem</b><br>
+                  The 40th International Conference on Information Networking (ICOIN), 2026
+                </td>
+              </tr>
+              <tr>
+                <td class="pub-spacer"></td>
+                <td>
+                  <b>EdgeFlame: A Physics-Inspired Framework for Zero-Shot Fire and Smoke Recognition</b><br>
+                  Hyeyoung Lee, <b>Muhammad Nadeem</b><br>
+                  The 4th International Conference on Automation, Robotics and Computer Applications (ICARCA), 2025
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
         <section class="section">
+          <h2 data-lang="en">Applied AI, IoT &amp; Signal Processing</h2>
+          <h2 data-lang="ko">응용 AI · IoT · 신호처리</h2>
+          <table class="pub-table">
+            <tbody>
+              <tr>
+                <td class="pub-spacer"></td>
+                <td>
+                  <b>IoT Anomaly Detection with Sound-Based Spectral Analysis and Lightweight Model</b><br>
+                  Hyeyoung Lee, <b>Muhammad Nadeem</b><br>
+                  IEEE International Conference on Big Data and Smart Computing (BigComp), 2025
+                </td>
+              </tr>
+              <tr>
+                <td class="pub-spacer"></td>
+                <td>
+                  <b>Physics-Consistent Hybrid AI for Quantum Device Manufacturing</b><br>
+                  Hyeyoung Lee, <b>Muhammad Nadeem</b><br>
+                  IEEE International Conference on Big Data and Smart Computing (BigComp), 2026
+                </td>
+              </tr>
+              <tr>
+                <td class="pub-spacer"></td>
+                <td>
+                  <b>Spectral Feature Extraction for Robust Network Intrusion Detection Using MFCCs</b><br>
+                  Hyeyoung Lee, <b>Muhammad Nadeem</b>, Piotr Tsoi<br>
+                  arXiv preprint, 2025
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section class="section">
+          <h2 data-lang="en">International Conferences</h2>
+          <h2 data-lang="ko">국제 학회</h2>
+          <table class="pub-table">
+            <tbody>
+              <tr>
+                <td class="pub-spacer"></td>
+                <td>
+                  <b>Brest Cancer Recognition Through Visual Intelligence Assisted Lightweight Convolution Neural Network</b><br>
+                  <b>Muhammad Nadeem</b>, Haseeb Khan, Wisal Khan, L. Minh Dang, Nguyen Le Quan, Hyeonjoon
+                  Moon<br>
+                  The 9th International Conference on Next Generation Computing (ICNGC 2023) <span class="badge">Best Paper Award</span><br>
+                  [<a href="https://m.earticle.net/Article/A448137">Paper</a>]
+                </td>
+              </tr>
+              <tr>
+                <td class="pub-spacer"></td>
+                <td>
+                  <b>Wheat Diseases Recognition Using Optimal Features Assisted Modified Soft Attention Network</b><br>
+                  <b>Muhammad Nadeem</b>, Aqib Khan, Ji-Won Kim, L. Minh Dang, Hyeonjoon Moon<br>
+                  The 15th International Conference on ICT Convergence<br>
+                  [<a href="https://ieeexplore.ieee.org/abstract/document/10392561">Paper</a>]
+                </td>
+              </tr>
+              <tr>
+                <td class="pub-spacer"></td>
+                <td>
+                  <b>Machine Learning for Mental Health: A Systematic Study of Seven Approaches for Detecting Mental Disorders</b><br>
+                  <b>Muhammad Nadeem</b>, Junaid Rashid, Hyeonjoon Moon, Arailym Dosset<br>
+                  The 38th International Technical Conference on Circuits/Systems, Computers and Communications<br>
+                  [<a href="https://ieeexplore.ieee.org/abstract/document/10212609">Paper</a>]
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section class="section">
+          <h2 data-lang="en">International Journals</h2>
+          <h2 data-lang="ko">국제 저널</h2>
+          <table class="pub-table">
+            <tbody>
+              <tr>
+                <td class="pub-spacer"></td>
+                <td>
+                  <b>Visual Intelligence in Smart Cities: A Lightweight Deep Learning Model for Fire Detection in an IoT Environment</b><br>
+                  <b>Muhammad Nadeem</b>, Naqqash Dilshad, Norah Saleh Alghamdi, L Minh Dang, Hyoung-Kyu Song, Junyoung Nam, Hyeonjoon Moon <br>
+                  Smart Cities<br>
+                  [<a href="https://www.mdpi.com/2624-6511/6/5/103">Paper</a>]
+                </td>
+              </tr>
+              <tr>
+                <td class="pub-spacer"></td>
+                <td>
+                  <b>VPBR: An Automatic and Low-Cost Vision-Based Biophysical Properties Recognition Pipeline for Pumpkin</b><br>
+                  L. Minh Dang, <b>Muhammad Nadeem</b>, Tan N. Nguyen, Han Yong Park, O New Lee, Hyoung-Kyu Song, Hyeonjoon Moon<br>
+                  Plants<br>
+                  [<a href="https://www.mdpi.com/2223-7747/12/14/2647">Paper</a>]
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section class="section" id="projects">
           <h2 data-lang="en">Portfolio &mdash; Selected Projects</h2>
           <h2 data-lang="ko">포트폴리오 &mdash; 주요 프로젝트</h2>
 
@@ -284,7 +476,7 @@
           </div>
         </section>
 
-        <section class="section">
+        <section class="section" id="experience">
           <h2 data-lang="en">Experience</h2>
           <h2 data-lang="ko">경력</h2>
           <div class="subsection">
@@ -360,7 +552,7 @@
           </ul>
         </section>
 
-        <section class="section">
+        <section class="section" id="skills">
           <h2 data-lang="en">Technical Skills</h2>
           <h2 data-lang="ko">기술 스킬</h2>
           <ul class="skill-list" data-lang="en">
@@ -401,7 +593,7 @@
           </ul>
         </section>
 
-        <section class="section">
+        <section class="section" id="awards">
           <h2 data-lang="en">Awards &amp; Honors</h2>
           <h2 data-lang="ko">수상 및 장학</h2>
           <ul class="bullets" data-lang="en">
@@ -418,156 +610,7 @@
           </ul>
         </section>
 
-        <section class="section">
-          <h2 data-lang="en">Vision-Language, Lightweight &amp; Edge Inference Papers (2025&ndash;2026)</h2>
-          <h2 data-lang="ko">비전-언어 · 경량화 · 엣지 추론 논문 (2025&ndash;2026)</h2>
-          <p class="meta-line" data-lang="en">13 publications, 5 as first author &mdash; full list on <a href="https://scholar.google.com/citations?user=n_sA9mkAAAAJ&amp;hl=en">Google Scholar</a>.</p>
-          <p class="meta-line" data-lang="ko">총 13편의 논문(제1저자 5편) &mdash; 전체 목록은 <a href="https://scholar.google.com/citations?user=n_sA9mkAAAAJ&amp;hl=en">Google Scholar</a>에서 확인할 수 있습니다.</p>
-          <table class="pub-table">
-            <tbody>
-              <tr>
-                <td class="pub-spacer"></td>
-                <td>
-                  <b>Lightweight Multi-Scale Fusion for Real-Time Autonomous Driving Segmentation</b><br>
-                  <b>Muhammad Nadeem</b>, Hyeyoung Lee<br>
-                  IEEE/CVF WACV 2026 Workshops &mdash; 5th Workshop on Large Language and Vision Models for Autonomous Driving (LLVM-AD), pp. 1721&ndash;1728<br>
-                  [<a href="https://llvm-ad.github.io/WACV_2026/">Workshop</a>]
-                </td>
-              </tr>
-              <tr>
-                <td class="pub-spacer"></td>
-                <td>
-                  <b>Bringing CLIP to the Edge: A Lightweight Fire Detection System for Real-Time Monitoring with UAV</b><br>
-                  Hyeyoung Lee, <b>Muhammad Nadeem</b><br>
-                  Asian Conference on Pattern Recognition (ACPR), 2025
-                </td>
-              </tr>
-              <tr>
-                <td class="pub-spacer"></td>
-                <td>
-                  <b>A Label-Free Lightweight Prompt-Driven Cross-Modal Fire Detection on Robotic Edge Platforms</b><br>
-                  Hyeyoung Lee, <b>Muhammad Nadeem</b><br>
-                  The 7th International Conference on Robotics and Computer Vision (ICRCV), 2025
-                </td>
-              </tr>
-              <tr>
-                <td class="pub-spacer"></td>
-                <td>
-                  <b>SpectroFire: Zero-Shot Fire and Smoke Detection via Real-Time Edge Inference and IoT Data Networking</b><br>
-                  Hyeyoung Lee, <b>Muhammad Nadeem</b><br>
-                  The 40th International Conference on Information Networking (ICOIN), 2026
-                </td>
-              </tr>
-              <tr>
-                <td class="pub-spacer"></td>
-                <td>
-                  <b>EdgeFlame: A Physics-Inspired Framework for Zero-Shot Fire and Smoke Recognition</b><br>
-                  Hyeyoung Lee, <b>Muhammad Nadeem</b><br>
-                  The 4th International Conference on Automation, Robotics and Computer Applications (ICARCA), 2025
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </section>
-
-        <section class="section">
-          <h2 data-lang="en">Applied AI, IoT &amp; Signal Processing</h2>
-          <h2 data-lang="ko">응용 AI · IoT · 신호처리</h2>
-          <table class="pub-table">
-            <tbody>
-              <tr>
-                <td class="pub-spacer"></td>
-                <td>
-                  <b>IoT Anomaly Detection with Sound-Based Spectral Analysis and Lightweight Model</b><br>
-                  Hyeyoung Lee, <b>Muhammad Nadeem</b><br>
-                  IEEE International Conference on Big Data and Smart Computing (BigComp), 2025
-                </td>
-              </tr>
-              <tr>
-                <td class="pub-spacer"></td>
-                <td>
-                  <b>Physics-Consistent Hybrid AI for Quantum Device Manufacturing</b><br>
-                  Hyeyoung Lee, <b>Muhammad Nadeem</b><br>
-                  IEEE International Conference on Big Data and Smart Computing (BigComp), 2026
-                </td>
-              </tr>
-              <tr>
-                <td class="pub-spacer"></td>
-                <td>
-                  <b>Spectral Feature Extraction for Robust Network Intrusion Detection Using MFCCs</b><br>
-                  Hyeyoung Lee, <b>Muhammad Nadeem</b>, Piotr Tsoi<br>
-                  arXiv preprint, 2025
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </section>
-
-        <section class="section">
-          <h2 data-lang="en">International Conferences</h2>
-          <h2 data-lang="ko">국제 학회</h2>
-          <table class="pub-table">
-            <tbody>
-              <tr>
-                <td class="pub-spacer"></td>
-                <td>
-                  <b>Brest Cancer Recognition Through Visual Intelligence Assisted Lightweight Convolution Neural Network</b><br>
-                  <b>Muhammad Nadeem</b>, Haseeb Khan, Wisal Khan, L. Minh Dang, Nguyen Le Quan, Hyeonjoon
-                  Moon<br>
-                  The 9th International Conference on Next Generation Computing (ICNGC 2023) <span class="badge">Best Paper Award</span><br>
-                  [<a href="https://m.earticle.net/Article/A448137">Paper</a>]
-                </td>
-              </tr>
-              <tr>
-                <td class="pub-spacer"></td>
-                <td>
-                  <b>Wheat Diseases Recognition Using Optimal Features Assisted Modified Soft Attention Network</b><br>
-                  <b>Muhammad Nadeem</b>, Aqib Khan, Ji-Won Kim, L. Minh Dang, Hyeonjoon Moon<br>
-                  The 15th International Conference on ICT Convergence<br>
-                  [<a href="https://ieeexplore.ieee.org/abstract/document/10392561">Paper</a>]
-                </td>
-              </tr>
-              <tr>
-                <td class="pub-spacer"></td>
-                <td>
-                  <b>Machine Learning for Mental Health: A Systematic Study of Seven Approaches for Detecting Mental Disorders</b><br>
-                  <b>Muhammad Nadeem</b>, Junaid Rashid, Hyeonjoon Moon, Arailym Dosset<br>
-                  The 38th International Technical Conference on Circuits/Systems, Computers and Communications<br>
-                  [<a href="https://ieeexplore.ieee.org/abstract/document/10212609">Paper</a>]
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </section>
-
-        <section class="section">
-          <h2 data-lang="en">International Journals</h2>
-          <h2 data-lang="ko">국제 저널</h2>
-          <table class="pub-table">
-            <tbody>
-              <tr>
-                <td class="pub-spacer"></td>
-                <td>
-                  <b>Visual Intelligence in Smart Cities: A Lightweight Deep Learning Model for Fire Detection in an IoT Environment</b><br>
-                  <b>Muhammad Nadeem</b>, Naqqash Dilshad, Norah Saleh Alghamdi, L Minh Dang, Hyoung-Kyu Song, Junyoung Nam, Hyeonjoon Moon <br>
-                  Smart Cities<br>
-                  [<a href="https://www.mdpi.com/2624-6511/6/5/103">Paper</a>]
-                </td>
-              </tr>
-              <tr>
-                <td class="pub-spacer"></td>
-                <td>
-                  <b>VPBR: An Automatic and Low-Cost Vision-Based Biophysical Properties Recognition Pipeline for Pumpkin</b><br>
-                  L. Minh Dang, <b>Muhammad Nadeem</b>, Tan N. Nguyen, Han Yong Park, O New Lee, Hyoung-Kyu Song, Hyeonjoon Moon<br>
-                  Plants<br>
-                  [<a href="https://www.mdpi.com/2223-7747/12/14/2647">Paper</a>]
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </section>
-
-        <section class="section">
+        <section class="section" id="activities">
           <h2 data-lang="en">Academic Activities</h2>
           <h2 data-lang="ko">학술 활동</h2>
           <div class="subsection">

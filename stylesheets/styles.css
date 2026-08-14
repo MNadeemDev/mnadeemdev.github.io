@@ -509,3 +509,112 @@ footer {
     grid-template-columns:1fr;
   }
 }
+
+/* ---- academic-homepage layout (centered hero, anchor nav, news) ---- */
+
+.hero-center {
+  text-align:center;
+}
+
+.hero-center img {
+  width:180px;
+  margin:0 auto 1rem;
+  display:block;
+}
+
+.hero-center h1 {
+  margin-bottom:0.5rem;
+}
+
+.hero-center .hero-meta {
+  max-width:44rem;
+  margin:0 auto;
+}
+
+.hero-center .lang-toggle {
+  justify-content:center;
+}
+
+.nav-links {
+  margin-top:1.1rem;
+  padding-top:1rem;
+  border-top:0.0625rem dashed var(--line);
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:0.35rem 1.4rem;
+  font-size:0.9rem;
+  font-weight:600;
+  letter-spacing:0.04em;
+  text-transform:uppercase;
+}
+
+.summary {
+  text-align:left;
+}
+
+.news-list {
+  list-style:none;
+  margin:0;
+  padding:0;
+  display:grid;
+  gap:0.55rem;
+}
+
+.news-list li {
+  display:grid;
+  grid-template-columns:5.5rem 1fr;
+  gap:0.9rem;
+  align-items:baseline;
+}
+
+.news-date {
+  color:var(--accent);
+  font-weight:600;
+  font-size:0.85rem;
+  letter-spacing:0.03em;
+}
+
+.news-list .is-new {
+  color:var(--ink);
+  font-weight:600;
+}
+
+details.see-more {
+  margin-top:0.7rem;
+}
+
+details.see-more > summary {
+  cursor:pointer;
+  color:var(--accent);
+  font-weight:600;
+  font-size:0.9rem;
+  list-style:none;
+}
+
+details.see-more > summary::-webkit-details-marker {
+  display:none;
+}
+
+details.see-more > summary::before {
+  content:"\25B8\00a0";
+}
+
+details.see-more[open] > summary::before {
+  content:"\25BE\00a0";
+}
+
+details.see-more > *:not(summary) {
+  margin-top:0.8rem;
+}
+
+@media (max-width: 42rem) {
+  .news-list li {
+    grid-template-columns:1fr;
+    gap:0.15rem;
+  }
+  .nav-links {
+    gap:0.3rem 0.9rem;
+    font-size:0.8rem;
+  }
+}
