@@ -8,7 +8,7 @@
   --lime: #c5f165;
   --paper: #ffffff;
   --serif: "Source Serif 4", Georgia, serif;
-  --sans: Inter, Arial, sans-serif;
+  --sans: Inter, "Noto Sans KR", Arial, sans-serif;
   --mono: "IBM Plex Mono", monospace;
 }
 
@@ -33,6 +33,11 @@ h1 { margin-bottom: 0.2rem; color: #15191e; font: 700 clamp(2.25rem, 5vw, 3.4rem
 .email { display: inline-block; margin-bottom: 0.95rem; font-size: 0.9rem; }
 .external-links { display: flex; flex-wrap: wrap; gap: 0.15rem 0.9rem; font-size: 0.86rem; }
 .external-links a::after { content: " ↗"; font-size: 0.72em; }
+.language-toggle { display: flex; align-items: center; flex-wrap: wrap; gap: 0.35rem; margin-top: 1rem; color: var(--muted); font: 500 0.65rem/1.3 var(--mono); letter-spacing: 0.03em; }
+.language-toggle span { margin-right: 0.15rem; }
+.language-toggle button { min-height: 1.8rem; padding: 0.18rem 0.48rem; border: 1px solid var(--line); border-radius: 0; color: var(--muted); background: #fff; font: inherit; cursor: pointer; transition: color 160ms ease, border-color 160ms ease, background 160ms ease; }
+.language-toggle button:hover { border-color: var(--blue); color: var(--blue); }
+.language-toggle button[aria-pressed="true"] { border-color: var(--blue); color: #fff; background: var(--blue); }
 
 .site-nav { display: flex; flex-wrap: wrap; gap: 0.5rem 1.15rem; padding: 0.8rem 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); font: 500 0.75rem/1.4 var(--mono); letter-spacing: 0.025em; }
 .site-nav a { color: var(--ink); }
