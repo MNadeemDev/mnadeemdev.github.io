@@ -96,8 +96,8 @@
           <article class="capability-card" data-reveal>
             <span class="card-number">01</span>
             <h3>LLM, VLM<br>&amp; RAG</h3>
-            <p>Grounded retrieval, document understanding, LoRA/QLoRA adaptation, and local model serving.</p>
-            <ul><li>Qwen2.5-VL</li><li>PEFT</li><li>BGE-M3</li></ul>
+            <p>On-premise LLM/VLM systems with grounded vector retrieval, document understanding, LoRA/QLoRA adaptation, and local serving.</p>
+            <ul><li>HyperCLOVA X SEED</li><li>Qwen2.5-VL</li><li>BGE-M3 embeddings</li><li>Chroma vector DB</li><li>LangChain</li><li>PEFT</li><li>Ollama / GGUF</li></ul>
           </article>
           <article class="capability-card" data-reveal>
             <span class="card-number">02</span>
@@ -120,10 +120,33 @@
         </div>
       </section>
 
+      <section class="section technical-skills-section" id="skills" aria-labelledby="skills-title">
+        <div class="section-label" data-reveal><span>03</span><p id="skills-title">TECHNICAL SKILLS</p></div>
+        <div class="skills-heading" data-reveal>
+          <h2>A practical<br><em>AI engineering stack.</em></h2>
+          <p>Complete technologies from the current CV, organized for fast scanning by recruiters and technical hiring managers.</p>
+        </div>
+        <div class="skills-grid">
+          <article class="skill-category" data-reveal><h3>LLM / VLM</h3><p>Qwen2.5-VL, HyperCLOVA X SEED, CLIP dual encoders, VQA, zero-shot cross-modal recognition</p></article>
+          <article class="skill-category" data-reveal><h3>Fine-Tuning</h3><p>Hugging Face Transformers, PEFT, LoRA/QLoRA, instruction tuning, chain-of-thought prompting</p></article>
+          <article class="skill-category" data-reveal><h3>RAG &amp; Retrieval</h3><p>LangChain, Chroma Vector DB, BGE-M3, dense + BM25 + knowledge-graph retrieval, RRF, cross-encoder reranking</p></article>
+          <article class="skill-category" data-reveal><h3>Inference Optimization</h3><p>INT8/4-bit quantization, PTQ, QAT, ONNX Runtime, TensorRT, OpenVINO, TFLite, distillation</p></article>
+          <article class="skill-category" data-reveal><h3>Serving &amp; APIs</h3><p>vLLM, Ollama, GGUF / llama.cpp, FastAPI, Flask, REST APIs, RTSP ingestion, React dashboards</p></article>
+          <article class="skill-category" data-reveal><h3>Object Detection</h3><p>YOLOv8/v12/v26, Faster R-CNN, DETR, SSD, YOLOX, YOLO-NAS, GroundingDINO, MobileNet</p></article>
+          <article class="skill-category" data-reveal><h3>Segmentation</h3><p>Mask R-CNN instance segmentation, semantic segmentation, OCR pipelines</p></article>
+          <article class="skill-category" data-reveal><h3>Tracking &amp; Pose</h3><p>Deep SORT, YOLO-pose 17-keypoint skeletons, fall detection, face de-identification</p></article>
+          <article class="skill-category" data-reveal><h3>Generative AI</h3><p>FLUX.2 [dev], Stable Diffusion, GANs, diffusers, synthetic-data generation</p></article>
+          <article class="skill-category" data-reveal><h3>Model Training</h3><p>PyTorch, TensorFlow, OpenCV, multi-GPU DP/DDP/multi-node training, transfer learning</p></article>
+          <article class="skill-category" data-reveal><h3>GPU &amp; Edge Hardware</h3><p>NVIDIA GPU servers, Jetson Orin Nano, Raspberry Pi 4/5, Intel N100 edge PC</p></article>
+          <article class="skill-category" data-reveal><h3>Time-Series</h3><p>N-BEATS, N-HiTS, forecasting and prediction pipelines</p></article>
+          <article class="skill-category" data-reveal><h3>Languages &amp; Tools</h3><p>Python, C++, Java, C#, Git, JIRA, Agile/Scrum, Ubuntu, Windows, macOS</p></article>
+        </div>
+      </section>
+
       <section class="section work-section" id="work">
         <div class="section-heading" data-reveal>
-          <div class="section-label"><span>03</span><p>SELECTED WORK</p></div>
-          <div><h2>Systems with a<br><em>clear point of view.</em></h2><p>Four examples of research translated into practical, measurable systems.</p></div>
+          <div class="section-label"><span>04</span><p>SELECTED WORK</p></div>
+          <div><h2>Systems with a<br><em>clear point of view.</em></h2><p>Nine examples of research translated into practical, measurable systems.</p></div>
         </div>
         <div class="project-grid">
           <article class="project-card project-rag" data-reveal>
@@ -135,7 +158,7 @@
               <li>Fused dense, Korean-bigram BM25, and knowledge-graph retrieval with cited answers.</li>
               <li>Made manual screenshots retrievable through Qwen2.5-VL captioning.</li>
             </ul>
-            <div class="project-tags"><span>Qwen2.5-VL</span><span>BGE-M3</span><span>LoRA / QLoRA</span></div>
+            <div class="project-tags"><span>HyperCLOVA X SEED</span><span>Qwen2.5-VL</span><span>BGE-M3 Embeddings</span><span>Chroma Vector DB</span><span>LoRA / QLoRA</span><span>Ollama / GGUF</span></div>
           </article>
 
           <article class="project-card project-drive" data-reveal>
@@ -169,11 +192,71 @@
             </ul>
             <div class="project-tags"><span>YOLO Pose</span><span>OpenVINO</span><span>Intel N100</span></div>
           </article>
+
+          <article class="project-card project-qr" data-reveal>
+            <div class="project-topline"><span>05 / 2022</span><span>MOBILE COMPUTER VISION</span></div>
+            <h3>Fake QR Code<br>Recognition</h3>
+            <p class="project-summary">A lightweight image classifier that distinguishes authentic from forged QR codes for mobile counterfeit verification.</p>
+            <ul class="project-points">
+              <li>Applied transfer learning to a MobileNet classifier for QR-code forgery detection.</li>
+              <li>Selected a low-parameter architecture to support phone-based verification instead of server-only inference.</li>
+              <li>Tuned the accuracy--model-size trade-off for resource-constrained deployment.</li>
+            </ul>
+            <div class="project-tags"><span>MobileNet</span><span>PyTorch</span><span>Transfer Learning</span></div>
+          </article>
+
+          <article class="project-card project-pumpkin" data-reveal>
+            <div class="project-topline"><span>06 / 2022–2023</span><span>INSTANCE SEGMENTATION</span></div>
+            <h3>VPBR Pumpkin<br>Measurement Pipeline</h3>
+            <p class="project-summary">A low-cost vision system that converts instance masks into physical pumpkin-length measurements for field phenotyping.</p>
+            <ul class="project-points">
+              <li>Segmented individual pumpkins with Mask R-CNN under occlusion and varied viewpoints.</li>
+              <li>Automated a measurement workflow previously performed manually in the field.</li>
+              <li>Published as VPBR in <em>Plants</em>, a Q1 journal (IF 4.5).</li>
+            </ul>
+            <div class="project-tags"><span>Mask R-CNN</span><span>PyTorch</span><span>OpenCV</span><span>Geometric Measurement</span></div>
+          </article>
+
+          <article class="project-card project-drone" data-reveal>
+            <div class="project-topline"><span>07 / 2026</span><span>GENERATIVE AI + DETECTION</span></div>
+            <h3>Drone Safety-Helmet<br>Compliance Detection</h3>
+            <p class="project-summary">An aerial helmet-compliance detector for construction sites and ski resorts where labelled drone imagery is scarce.</p>
+            <ul class="project-points">
+              <li>Generated image-conditioned synthetic training data with FLUX.2 [dev] while retaining subject identity and visual style.</li>
+              <li>Varied backgrounds, weather, and poses to create 1024 × 1024 aerial scenes representing approximately 10 m flight altitude.</li>
+              <li>Used bfloat16 and model CPU offload to augment a real YOLO-format dataset on consumer-grade GPUs.</li>
+            </ul>
+            <div class="project-tags"><span>FLUX.2 [dev]</span><span>diffusers</span><span>YOLO</span><span>bfloat16</span></div>
+          </article>
+
+          <article class="project-card project-stream" data-reveal>
+            <div class="project-topline"><span>08 / 2024–PRESENT</span><span>REAL-TIME VISION</span></div>
+            <h3>CCTV &amp; Drone<br>Detection and Tracking</h3>
+            <p class="project-summary">Reliable live-video inference pipelines for IP cameras and drones, built for operational detection and multi-object tracking.</p>
+            <ul class="project-points">
+              <li>Implemented RTSP decoding, frame sampling, and automatic reconnection for live CCTV and drone feeds.</li>
+              <li>Delivered debris, sea-waste, fire/smoke, and people detection with YOLO and Deep SORT tracking.</li>
+              <li>Optimized small-object detection with TensorRT and exposed models through FastAPI operator dashboards.</li>
+            </ul>
+            <div class="project-tags"><span>YOLO</span><span>Deep SORT</span><span>RTSP / OpenCV</span><span>TensorRT</span><span>Jetson Orin Nano</span></div>
+          </article>
+
+          <article class="project-card project-flame" data-reveal>
+            <div class="project-topline"><span>09 / 2022–2024</span><span>EDGE FIRE DETECTION</span></div>
+            <h3>FlameNet<br>Smart-City Fire Detection</h3>
+            <p class="project-summary">An efficient deep-learning model for fire detection and classification in IoT environments; completed as an M.S. thesis.</p>
+            <ul class="project-points">
+              <li>Designed a lightweight CNN that balances accuracy, parameter count, and inference cost for edge deployment.</li>
+              <li>Applied model-compression principles to support resource-constrained IoT monitoring.</li>
+              <li>Published in <em>Smart Cities</em> (Q1, IF 7.0); related work received the ICNGC 2023 Best Paper Award.</li>
+            </ul>
+            <div class="project-tags"><span>PyTorch</span><span>Lightweight CNN</span><span>Model Compression</span><span>IoT / Edge</span></div>
+          </article>
         </div>
       </section>
 
       <section class="section experience-section" id="experience">
-        <div class="section-label" data-reveal><span>04</span><p>EXPERIENCE</p></div>
+        <div class="section-label" data-reveal><span>05</span><p>EXPERIENCE</p></div>
         <div class="experience-layout">
           <div data-reveal><h2>From research question<br>to <em>working system.</em></h2></div>
           <ol class="timeline">
@@ -195,7 +278,7 @@
 
       <section class="section publication-section" id="publications">
         <div class="publication-intro" data-reveal>
-          <div class="section-label"><span>05</span><p>PUBLICATIONS</p></div>
+          <div class="section-label"><span>06</span><p>PUBLICATIONS</p></div>
           <h2>Research that<br><em>travels beyond the lab.</em></h2>
           <p>13 publications, including five as first author. Recent work focuses on vision-language models, lightweight systems, and edge inference.</p>
           <a class="button button-dark" href="https://scholar.google.com/citations?user=n_sA9mkAAAAJ&amp;hl=en" target="_blank" rel="noopener">View Google Scholar <span aria-hidden="true">↗</span></a>
@@ -203,7 +286,17 @@
         <div class="publication-list">
           <article data-reveal><span>WACV 2026</span><div><h3>Lightweight Multi-Scale Fusion for Real-Time Autonomous Driving Segmentation</h3><p><strong>Muhammad Nadeem</strong>, Hyeyoung Lee · LLVM-AD Workshop</p></div></article>
           <article data-reveal><span>ACPR 2025</span><div><h3>Bringing CLIP to the Edge: A Lightweight Fire Detection System for Real-Time Monitoring with UAV</h3><p>Hyeyoung Lee, <strong>Muhammad Nadeem</strong></p></div></article>
+          <article data-reveal><span>ICRCV 2025</span><div><h3>A Label-Free Lightweight Prompt-Driven Cross-Modal Fire Detection on Robotic Edge Platforms</h3><p>Hyeyoung Lee, <strong>Muhammad Nadeem</strong> · International Conference on Robotics and Computer Vision</p></div></article>
+          <article data-reveal><span>ICOIN 2026</span><div><h3>SpectroFire: Zero-Shot Fire and Smoke Detection via Real-Time Edge Inference and IoT Data Networking</h3><p>Hyeyoung Lee, <strong>Muhammad Nadeem</strong> · International Conference on Information Networking</p></div></article>
+          <article data-reveal><span>ICARCA 2025</span><div><h3>EdgeFlame: A Physics-Inspired Framework for Zero-Shot Fire and Smoke Recognition</h3><p>Hyeyoung Lee, <strong>Muhammad Nadeem</strong> · International Conference on Automation, Robotics and Computer Applications</p></div></article>
+          <article data-reveal><span>BIGCOMP 2025</span><div><h3>IoT Anomaly Detection with Sound-Based Spectral Analysis and Lightweight Model</h3><p>Hyeyoung Lee, <strong>Muhammad Nadeem</strong> · IEEE International Conference on Big Data and Smart Computing</p></div></article>
+          <article data-reveal><span>BIGCOMP 2026</span><div><h3>Physics-Consistent Hybrid AI for Quantum Device Manufacturing</h3><p>Hyeyoung Lee, <strong>Muhammad Nadeem</strong> · IEEE International Conference on Big Data and Smart Computing</p></div></article>
+          <article data-reveal><span>arXiv 2025</span><div><h3>Spectral Feature Extraction for Robust Network Intrusion Detection Using MFCCs</h3><p>Hyeyoung Lee, <strong>Muhammad Nadeem</strong>, Piotr Tsoi · arXiv preprint</p></div></article>
           <article data-reveal><span>SMART CITIES</span><div><h3>Visual Intelligence in Smart Cities: A Lightweight Deep Learning Model for Fire Detection in an IoT Environment</h3><p><strong>Muhammad Nadeem</strong> et al. · Q1 journal, IF 7.0</p></div></article>
+          <article data-reveal><span>PLANTS</span><div><h3>VPBR: An Automatic and Low-Cost Vision-Based Biophysical Properties Recognition Pipeline for Pumpkin</h3><p>L. Minh Dang, <strong>Muhammad Nadeem</strong> et al. · Q1 journal, IF 4.5</p></div></article>
+          <article data-reveal><span>ITCCSCC 2023</span><div><h3>Machine Learning for Mental Health: A Systematic Study of Seven Approaches for Detecting Mental Disorders</h3><p><strong>Muhammad Nadeem</strong>, Junaid Rashid, Hyeonjoon Moon, Arailym Dosset</p></div></article>
+          <article data-reveal><span>ICTC 2023</span><div><h3>Wheat Diseases Recognition Using Optimal Features Assisted Modified Soft Attention Network</h3><p><strong>Muhammad Nadeem</strong>, Aqib Khan, Ji-Won Kim et al. · International Conference on ICT Convergence</p></div></article>
+          <article data-reveal><span>ICNGC 2023</span><div><h3>Breast Cancer Recognition Through Visual Intelligence Assisted Lightweight Convolution Neural Network</h3><p><strong>Muhammad Nadeem</strong> et al. · Best Paper Award</p></div></article>
         </div>
       </section>
 
